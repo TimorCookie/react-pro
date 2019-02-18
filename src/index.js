@@ -1,7 +1,6 @@
 import { createStore } from 'redux';
 import { combineReducers } from 'redux';
 
-
 const allReducers = {
   products: productsReducer,
   shoppingCart: cartReducer
@@ -64,5 +63,4 @@ let unsubscribe = store.subscribe(()=> console.log(store.getState()))
 store.dispatch(addToCart('orange 1kg',1,47))
 store.dispatch(addToCart('apple 2kg',3,20))
 unsubscribe()
-
 
